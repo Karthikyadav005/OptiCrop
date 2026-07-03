@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prediction Result - OptiCrop</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container" style="text-align: center;">
+        <h1>Recommendation Ready!</h1>
+        <p>Based on your soil parameters, our ML model identified the best match:</p>
+        
+        <div class="result-card">
+            <div class="result-crop">🌱 {{ crop }}</div>
+        </div>
+
+        <h3 style="margin-top: 30px; color: #1b5e20;">Advanced Analytics</h3>
+        <p style="font-size: 14px; margin-bottom: 15px;">Compare your inputs against ideal crop requirements:</p>
+        
+        <!-- Embedded Analytics Chart for Epic 8 -->
+        <img src="{{ url_for('static', filename='metrics_chart.png') }}?v={{ range(1, 99999) | random }}" alt="Soil Metrics Chart" style="max-width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+        
+        <br>
+        <a href="/" class="btn-secondary">Go Back</a>
+    </div>
+</body>
+</html>
