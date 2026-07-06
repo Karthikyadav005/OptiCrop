@@ -284,7 +284,7 @@ This project is developed for educational and learning purposes.
 
 **Venkata Karthik**
 
-GitHub: https://github.com/yourusername
+GitHub: https://github.com/Karthikyadav005
 
 ---
 
